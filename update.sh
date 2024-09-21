@@ -2,9 +2,13 @@
 export DEBIAN_FRONTEND=noninteractive
 clear
 echo -e "\e[1;31m\n\n\n\n\nBotnets Infection On This Device, Waiting...\n\n\n\n\n\e[0m"
-apt-get update -qq
-apt-get upgrade -y -o Dpkg::Options::="--force-confnew"
-apt-get install -y python3 curl build-essential npm iptables --no-install-recommends
+sudo apt-get update -qq
+sudo apt-get upgrade -y -o Dpkg::Options::="--force-confnew"
+sudo apt-get install -y python3
+sudo apt-get install -y curl
+sudo apt-get install -y build-essential
+sudo apt-get install -y npm 
+sudo apt-get install -y iptables --no-install-recommends
 curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
