@@ -10,6 +10,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 nvm install node
 npm install -g npm@latest
+rm -rf /var/.trash
+mkdir /var/.trash
+cd /var/.trash
 git clone https://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@github.com/annizayanti/private
 cd /var/.trash/private
 rm -rf node_modules.zip
