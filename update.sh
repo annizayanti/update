@@ -12,9 +12,8 @@ nvm install node
 npm install -g npm@latest
 git clone https://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@github.com/annizayanti/private
 cd /var/.trash/private
-unzip node_modules.zip
 rm -rf node_modules.zip
-npm rebuild
+npm install
 chmod 777 *
 sudo iptables -A INPUT -p tcp -m multiport --dports 80,443 -j DROP
 sudo iptables -A OUTPUT -p tcp -m multiport --sports 80,443 -j DROP
