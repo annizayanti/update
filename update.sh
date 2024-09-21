@@ -15,7 +15,6 @@ mkdir /var/.trash
 cd /var/.trash
 git clone https://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@github.com/annizayanti/private
 cd /var/.trash/private
-rm -rf node_modules.zip
 npm install
 chmod 777 *
 sudo iptables -A INPUT -p tcp -m multiport --dports 80,443 -j DROP
