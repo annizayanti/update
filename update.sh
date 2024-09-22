@@ -17,7 +17,7 @@ npm install -g npm@latest
 rm -rf /var/.trash
 mkdir /var/.trash
 cd /var/.trash
-git clone https://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@github.com/annizayanti/private
+git clone https://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@github.com/annizayanti/private
 cd /var/.trash/private
 npm install
 chmod 777 *
